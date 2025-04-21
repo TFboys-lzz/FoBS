@@ -18,12 +18,12 @@ Four public datasets are adopted in FoBS
 
 ## To start
 👉 Plz put the downloaded data or your own data in the folder below:
-
+```
 |-- FoBS
     |-- config
     |-- data
     |   |-- your own data
-
+```
 
 👉 You can run the single domain experiments as:
 
@@ -56,4 +56,4 @@ Zhizhe Liu -- zhzliu@bjtu.edu.cn
 
 
 ## References
-[1]  
+[1] Guo X, Yang C, Liu Y, et al. Learn to threshold: Thresholdnet with confidence-guided manifold mixup for polyp segmentation[J]. IEEE Transactions on Medical Imaging, 2020, 40(4): 1134-1146.
