@@ -4,7 +4,7 @@
 <p align="center">2 Medical Big Data Research Center, Chinese PLA General Hospital</p>
 <p align="center">3 Institute of Automation, Chinese Academy of Sciences</p>
 
-![image](https://github.com/TFboys-lzz/FoBS/tree/main/img/FoBS.png)
+![image](./img/FoBS.png)
 
 ## Datasets
 Four public datasets are adopted in FoBS
