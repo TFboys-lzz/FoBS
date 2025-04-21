@@ -28,13 +28,13 @@ Four public datasets are adopted in FoBS
 👉 You can run the single domain experiments as:
 
 ```
-python  train_single_domain.py --cfg_path ./
+python  train_single_domain.py --cfg_path ./config/single_domain.yaml
 ```
 
 👉 You can run the cross domain experiments as:
 
 ```
-python  train_cross_domain.py --cfg_path ./
+python  train_cross_domain.py --cfg_path ./config/cross_domain.yaml
 ```
 
 
