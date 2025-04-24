@@ -1,1 +1,79 @@
 
+
+ROOT_DIR: 'xxx'
+Alpha:      0.4
+Mixup_start_epoch: -1
+
+
+EXP_NAME:      'Kvasir'
+DATA_NAME:     'Kvasir'
+DATA_AUG:      False
+DATA_WORKERS:  4
+
+## data aug params ##
+DATA_RESCALE:        256
+DATA_RANDOMCROP:     384
+DATA_RANDOMROTATION: 180
+DATA_RANDOMSCALE:    1.25
+DATA_RANDOM_H:       10
+DATA_RANDOM_S:       10
+DATA_RANDOM_V:       10
+DATA_RANDOMFLIP:     0.5
+ssim_weight:         1.0
+refine_weight:       1.0
+## data aug params ##
+
+
+TRAIN_IMG_ROOT: ''
+TRAIN_GT_ROOT:  ''
+
+TEST_IMG_ROOT:  ''
+TEST_GT_ROOT:   ''
+
+DATA_SIZE: 224
+
+## model parameters ###
+MODEL_NAME:        'deeplabv3plus'
+MODEL_BACKBONE:    'res101_atrous'
+TRAIN_CKPT:        './pretrained_model/deeplabv3plus_res101_atrous_VOC2012_epoch46_all.pth'
+MODEL_OUTPUT_STRIDE:   16
+MODEL_ASPP_OUTDIM:     256
+MODEL_SHORTCUT_DIM:    48
+MODEL_SHORTCUT_KERNEL: 1
+MODEL_NUM_CLASSES:     2
+BETA1:                 1.5
+TRAIN_LR:              0.001
+TRAIN_LR_GAMMA:        0.1
+TRAIN_MOMENTUM:        0.9
+TRAIN_WEIGHT_DECAY:    0.00001
+TRAIN_BN_MOM:          0.0003
+TRAIN_POWER:           0.9
+TRAIN_GPUS:            1
+TRAIN_BATCHES:         16
+TRAIN_SHUFFLE:         True
+TRAIN_MINEPOCH:        0
+TRAIN_EPOCHS:          500
+WARMUP_EPOCHS:         5
+TRAIN_EPOCHS_lr:       500
+TRAIN_LOSS_LAMBDA:     0
+TRAIN_TBLOG:           True
+## model parameters ###
+
+## output dir  ###
+MODEL_SAVE_DIR:           './model'
+TRAIN_TENSORBOARD:        True
+TRAIN_TENSORBOARD_LOGDIR: ''
+EXP_ROOT_LOGS:            'log'
+## output dir  ###
+
+
+### test parameters ##
+TEST_MULTISCALE: [1.0]
+TEST_FLIP: False
+TEST_GPUS: 2
+TEST_BATCHES: 16
+MARGIN: 0
+### test parameters ##
+
+
+
